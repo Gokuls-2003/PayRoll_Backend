@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'employee',
+    'payment',
+    'jazzmin',
+  
     
 ]
 
@@ -81,6 +84,17 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+JAZZMIN_SETTINGS = {
+    "site_title": "My Admin",
+    "site_header": "My Admin",
+    "site_footer": "Copyright © 2022 My Company",
+    "show_ui_builder": True,
+    "ui_builder_function": "jazzmin.utils.admin_assembler",
+    "related_modal_active": True,
+    # Add more options as needed
+}
+
 
 
 # Password validation
