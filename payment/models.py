@@ -15,7 +15,6 @@ class Salary(models.Model):
         return f"{self.staff.user.get_full_name()}'s Salary"
 
 
-
 class Allowance(models.Model):
     salary = models.ForeignKey(
         Salary, on_delete=models.CASCADE, related_name="salary_allowances")

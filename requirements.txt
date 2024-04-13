@@ -1,2 +1,5 @@
-phonenumber-field
+django-phonenumber-field
 django-jazzmin
+Django
+djangorestframework
+django-cors-headers
